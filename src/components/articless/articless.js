@@ -6,6 +6,7 @@ function Articless(props) {
 
   return (
 
+    <div className={`${props.isOpen ? 'conteiner' : 'conteiner_disable'}`}>
     <div className={`${props.isOpen ? 'popup__wrapper' : 'popup_disable'}`}>
       <img className='popup__close' src={cl_bt} alt="" onClick={props.isClose}/>
       <div className='popup__textwrap'>
@@ -47,6 +48,10 @@ function Articless(props) {
 
 
     </div>
+
+    </div>
+
+
 
   )
 }

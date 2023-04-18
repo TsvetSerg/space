@@ -19,6 +19,7 @@ import Plurielss from '../plurielss/plurielss'
 import Formess from '../formess/formess'
 import Articless from '../articless/articless'
 import Genress from '../genress/genress'
+import Adjectifss from '../adjectifss/adjectifss'
 import React from 'react';
 
 
@@ -36,7 +37,7 @@ function App() {
   const [isFormess, setFormess] = React.useState(false);
   const [isGenress, setGenress] = React.useState(false);
   const [isPlurielss, setPlurielss] = React.useState(false);
-  // const [isAdjectifss, setAdjectifss] = React.useState(false);
+  const [isAdjectifss, setAdjectifss] = React.useState(false);
 
 
   function open() {
@@ -75,9 +76,9 @@ function App() {
     setPlurielss(true)
   }
 
-  // function openAdjectifss() {
-  //   setAdjectifss(true)
-  // }
+  function openAdjectifss() {
+    setAdjectifss(true)
+  }
 
   function close() {
     setAddPopup(false)
@@ -89,7 +90,7 @@ function App() {
     setFormess(false)
     setGenress(false)
     setPlurielss(false)
-    // setAdjectifss(false)
+    setAdjectifss(false)
   }
 
 
@@ -135,6 +136,11 @@ function App() {
         isClose = {close}
       />
 
+      <Adjectifss
+        isOpen = {isAdjectifss}
+        isClose = {close}
+      />
+
       <img src={back} alt="" className='back' />
 
       <div className='wrapper'>
@@ -147,7 +153,7 @@ function App() {
         <img className='place formess' src={formess} alt="" onClick={openFormess} />
         <img className='place genress' src={genress} alt="" onClick={openGenress} />
         <img className='place plurielss' src={plurielss} alt="" onClick={openPlurielss} />
-        <img className='place adjectifss' src={adjectifss} alt="" />
+        <img className='place adjectifss' src={adjectifss} alt="" onClick={openAdjectifss} />
       </div>
 
 

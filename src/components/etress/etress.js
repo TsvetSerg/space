@@ -7,6 +7,7 @@ function Etress(props) {
 
   return (
 
+    <div className={`${props.isOpen ? 'conteiner' : 'conteiner_disable'}`}>
     <div className={`${props.isOpen ? 'popup__wrapper' : 'popup_disable'}`}>
       <img className='popup__close' src={cl_bt} alt="" onClick={props.isClose}/>
       <h1>СПРЯЖЕНИЕ ГЛАГОЛА ÊTRE</h1>
@@ -31,6 +32,10 @@ function Etress(props) {
           </tr></tbody>
       </table>
     </div>
+
+
+    </div>
+
 
   )
 }
