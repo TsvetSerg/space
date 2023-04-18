@@ -13,14 +13,14 @@ function Adjectifss(props) {
       <h1>ПРИТЯЖАТЕЛЬНЫЕ ПРИЛАГАТЕЛЬНЫЕ</h1>
       <h3>Эти маленькие словечки используются вместо артикля перед существительным и указывают на то, кому принадлежит тот или иной предмет. </h3>
 
-      <table class="iksweb">
+      <table className={`${props.isOpen ? 'iksweb' : 'iksweb_disable'}`}>
       	<tbody>
       		<tr>
-      			<td rowspan="2">Местоимение
+      			<td rowSpan="2">Местоимение
       </td>
-      			<td colspan="2">Единственное число
+      			<td colSpan="2">Единственное число
       </td>
-      			<td rowspan="2">Множественное число
+      			<td rowSpan="2">Множественное число
       </td>
       		</tr>
       		<tr>
@@ -72,7 +72,7 @@ function Adjectifss(props) {
       		<tr>
       			<td>Nous (Мы)
       </td>
-      			<td colspan="2">Notre (наш, наша)
+      			<td colSpan="2">Notre (наш, наша)
       </td>
       			<td>Nos (наши)
       </td>
@@ -80,7 +80,7 @@ function Adjectifss(props) {
       		<tr>
       			<td>Vous (Вы)
       </td>
-      			<td colspan="2">Votre (ваш, ваша)
+      			<td colSpan="2">Votre (ваш, ваша)
       </td>
       			<td>Vos (ваши)
       </td>
@@ -88,7 +88,7 @@ function Adjectifss(props) {
       		<tr>
       			<td>Ils (Они)
       </td>
-      			<td colspan="2">Leur (их)
+      			<td colSpan="2">Leur (их)
       </td>
       			<td>Leurs (их)
       </td>
@@ -96,7 +96,7 @@ function Adjectifss(props) {
       		<tr>
       			<td>Elles (Они)
       </td>
-      			<td colspan="2">Leur (их)
+      			<td colSpan="2">Leur (их)
       </td>
       			<td>Leurs (их)
       </td>
@@ -105,7 +105,7 @@ function Adjectifss(props) {
       </table>
 
 
-      <table class="iksweb">
+      <table className={`${props.isOpen ? 'iksweb' : 'iksweb_disable'}`}>
         <tbody>
           <tr>
             <td>J`ai un chat. C`est mon chat.
